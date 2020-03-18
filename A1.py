@@ -8,11 +8,14 @@ def calculate(a,b):
 #A1Q2#
 
 def sumHypotenuses(triangles):
-    # Your code goes here
+    '''
+	# Your code goes here
     n = 0
     for i in triangles:
         n += (i[0]**2 + i[1]**2)**0.5
     return n
+	'''
+	return sum((t[0]**2+t[1]**2)**0.5 for t in triangles)
 
 #END A1Q2#
 
